@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+/* Inicio -- Configurações de variáveis */
+:root {
+    --cor0:#fbfbfb;  
+    --cor1:#abc4bc;
+    --cor2:#b1c4af;
+    --cor3:#9cae94;
+    --cor4:#6f8e6b;
+    --cor5:#5f8775;  
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+/* Final -- Configurações de variáveis */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    padding-bottom: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: #A12BA1;
+}
+
+#hero {
+    text-align: center;
+    color: white;
+  }
+  
+  #hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  #hero p {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor5);
+    text-align: center;
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+
+#servicos {
+    background-color: #F0F4F5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    margin-bottom: 0.8em;
+}
+
+#servicos h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+  
+#servicos h2 {
+    text-align: left;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#servicos-info h4 {
+    margin-top: em;
+    text-align: left;
+    margin-bottom: 1em;
+}
+  
+#servicos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+#servicos li {
+    width: 50%;
+    padding: 1em;
+}
+  
+#servicos li h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+  
+#servicos li p {
+    margin:auto;
+    text-align: justify;
+}
+/*
+#cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #F0F4F5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    margin-bottom: 0.8em;    
+    flex-basis: calc(33.33% -20px);   
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+*/
+
+
+#cards {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+#cards .card {
+    position: relative;
+    max-width: 260px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+#cards .card:hover {
+    height: 420px;
+}
+
+#cards .card .imgBx {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);    
+}
+
+#cards .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+#cards .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#cards .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+#depoimentos {
+    background-color: #F0F4F5;    
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    margin-bottom: 0.8em;
+}
+        
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+        
+.depoimento img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+
+#contato {
+    background-color: #F0F4F5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+
+}
+    
+#contato h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+        
+#contato label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+    
+#contato input,
+#contato textarea {
+    display: block;
+    width: 98%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+    
+#contato button[type="submit"] {
+    background-color: var(--cor5);
+    color: #fff;
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    
+#contato button[type="submit"]:hover {
+    background-color: #A12BA1;
+}
+
+footer {
+    background-color: var(--cor5); 
+    color: var(--cor0);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+#btnTop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor2);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .arrow {
+    border: solid var(--cor5);
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }

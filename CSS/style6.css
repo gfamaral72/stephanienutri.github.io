@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background-color: #F9E3C8;
+    padding: 1em;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav a {
+    color: #6F2DBD;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #A12BA1;
+  }
+  
+  #hero {
+    text-align: center;
+  }
+  
+  #hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  #hero p {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  
+  #servicos {
+    background-color: #F0F4F5;
+    padding: 2em;
+  }
+  
+  #servicos h2 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  #servicos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #servicos li {
+    width: 50%;
+    padding: 1em;
+  }
+  
+  #servicos li h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  #servicos li p {
+    margin:auto;
+  }
+    
+  #depoimentos {
+    background-color: #E3E3E3;
+    padding: 2em;
+    }
+        
+    .depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    }
+        
+    .depoimento img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    }
+    
+    #contato {
+    background-color: #F9E3C8;
+    padding: 2em;
+    }
+    
+    #contato h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    }
+        
+    #contato label {
+    display: block;
+    margin-bottom: 0.5em;
+    }
+    
+    #contato input,
+    #contato textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    }
+    
+    #contato button[type="submit"] {
+    background-color: #6F2DBD;
+    color: #fff;
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+    #contato button[type="submit"]:hover {
+    background-color: #A12BA1;
+    }
+    
+    footer {
+    background-color: #F9E3C8;
+    padding: 1em;
+    text-align: center;
+    }
+    
+    @media only screen and (max-width: 768px) {
+    #servicos li {
+    width: 100%;
+    }
+}
