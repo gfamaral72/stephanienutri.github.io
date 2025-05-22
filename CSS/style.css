@@ -9,12 +9,12 @@
 }
 /* Inicio -- Configurações de variáveis */
 :root {
-    --cor0:#fbfbfb;  
-    --cor1:#abc4bc;
-    --cor2:#b1c4af;
-    --cor3:#9cae94;
-    --cor4:#6f8e6b;
-    --cor5:#5f8775;  
+    --cor0:#f0eade;  
+    --cor1:#d9c7b9;
+    --cor2:#c9b39d;
+    --cor3:#978579;
+    --cor4:#715a4a;
+    --cor5:#543d2d;  
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
@@ -82,7 +82,7 @@ nav > a {
 
 nav > a:hover {
     background-color: var(--cor3);
-    color: #A12BA1;
+    color: #ffffff;
 }
 
 #hero {
@@ -105,7 +105,8 @@ main {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
-    background-color: white;
+    /*background-color: white;*/
+    background-color: #F0EADE;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
     border-bottom-left-radius: 10px;
@@ -167,7 +168,8 @@ main img.pequena {
 
 
 #servicos {
-    background-color: #F0F4F5;
+    /*background-color: #F0F4F5; */
+    background-color: #F5EAD8;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
@@ -260,7 +262,8 @@ main img.pequena {
     position: relative;
     max-width: 260px;
     height: 215px;
-    background: #fff;
+    /*background: #fff;*/
+    background: #c9b39d;
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
@@ -306,7 +309,8 @@ main img.pequena {
     transition-delay: 0.3s;
 }
 #depoimentos {
-    background-color: #F0F4F5;    
+    /*background-color: #F0F4F5;    */
+    background-color: #F5EAD8;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
@@ -328,7 +332,8 @@ main img.pequena {
 }
 
 #contato {
-    background-color: #F0F4F5;
+    /*background-color: #F0F4F5;    */
+    background-color: #F5EAD8;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
